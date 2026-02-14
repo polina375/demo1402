@@ -1,8 +1,158 @@
-<html>
-    <head>
-    <title>Первая страничка</title>
-    </head>
-    <body>
-        <h1> Привет, мир! </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polina | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff4ecd, #5b9dff);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about {
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hi, I'm Polina 👋</h1>
+    <p>Student | Future Developer | Creative Mind</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p class="about">
+        I'm Polina, a passionate student learning web development.
+        I love creating bright, modern and user-friendly websites.
+        I'm constantly improving my skills and building exciting projects.
+    </p>
+</section>
+
+<section>
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Project One</h3>
+            <p>A modern landing page with responsive design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Two</h3>
+            <p>A small JavaScript app for everyday tasks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Three</h3>
+            <p>A creative portfolio template with animations.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+    <p class="contact">
+        Email: polina@example.com <br>
+        Instagram: @polina.dev
+    </p>
+</section>
+
+<footer>
+    © 2026 Polina | Portfolio Website
+</footer>
+
 </body>
 </html>
